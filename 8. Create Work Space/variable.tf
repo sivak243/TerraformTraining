@@ -10,7 +10,7 @@ variable "Subnet" {
 variable "SecurityGroup" {
   description = "assigning the SecurityGroup ID"
   type = string
-  default = "sg-04681fb5861e854ec"
+  default = "sg-05a3ca892ee16a933"
   }
 
   variable "instancetype" {

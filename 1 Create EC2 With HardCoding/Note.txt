@@ -1,0 +1,15 @@
+Installtion Steps Terraforms
+
+1) Download the terraform executable files from HCL.
+2) Configure your OS environment variable.
+3) Validation  :   terraform -version
+4) Install AWS CLI ( Just windows installation (Next Next))  
+5) validation  :  aws -version
+6) Install visual Stdion
+7) create an AWS IAM USER with CLI access and download the Access Key and Screat Key.
+8) Login to AWS 
+        aws configure
+     Note : Provide the access key , Screat Key  , Region 
+9) valdiation
+        aws sts get-caller-identity   
+        aws s3 ls     -- display all the S3 buckets .    

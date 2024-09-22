@@ -2,7 +2,8 @@ resource "aws_instance" "LinuxServerEC2" {
      
         ami =var.ami
         instance_type = var.instancetype
-        key_name = "SivaPemFile" 
+        
+        key_name = var.key_name
         
         subnet_id = var.Subnet
         vpc_security_group_ids = [var.SecurityGroup]
@@ -10,11 +11,11 @@ resource "aws_instance" "LinuxServerEC2" {
 
   
     tags = {
-        Name = "AWS Training"
+        Name = var.instance_name
          }
 }
 
 
 provider "aws" {
-  region = "ap-south-1"
+  region = var.region
 }

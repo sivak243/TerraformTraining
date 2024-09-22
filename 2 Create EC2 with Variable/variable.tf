@@ -24,3 +24,22 @@ variable "SecurityGroup" {
   type = string
   default = "ami-02eb7a4783e7e9317"
   }
+
+  variable "region" {
+  description = "Giving the AWS Region"
+  type	= string
+  default = "ap-south-1"
+}
+
+ variable "key_name" {
+  description = "Giving the Key_Name"
+  type	= string
+  default = "SivaPemFile"
+}
+
+
+ variable "instance_name" {
+  description = "hilight the instance name"
+  type	= string
+  default = "AWS Training"
+}

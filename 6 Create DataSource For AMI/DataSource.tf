@@ -10,7 +10,7 @@ data "aws_ami" "ec2ami" {
   filter {
     name   = "name"
     //values = ["amzn2-ami-kernel-5.10-hvm-2.0.20220805.0-x86_64-gp2"]
-    values = ["amzn2-ami-kernel-5.1*"]
+    values = ["amzn2-ami-kernel-5.10*"]
 
   }
 

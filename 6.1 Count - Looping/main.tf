@@ -14,8 +14,8 @@ terraform {
 }
 
 resource "aws_instance" "LinuxServerEC2" {
-     
-        ami =data.aws_ami.ec2ami.id
+        count = 2
+        ami =var.ami
         instance_type = var.instancetype
         key_name = "SivaPem" 
         
@@ -23,9 +23,12 @@ resource "aws_instance" "LinuxServerEC2" {
         vpc_security_group_ids = [var.SecurityGroup]
  
     tags = {
-        Name = "AWS Training"
+        Name = "AWS Training ${count.index}"
+
+
          }
 }
+
 
 
 provider "aws" {

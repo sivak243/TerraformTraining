@@ -1,2 +1,2 @@
 instancetype="t2.micro"
-Subnet="subnet-05d1ae82f96d631ec"
+Subnet="subnet-05d98b2a60ee9673f"

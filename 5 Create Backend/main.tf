@@ -6,7 +6,7 @@ locals{
 
 terraform {
   backend "s3" {
-    bucket         = "mystatefilebucket243"
+    bucket         = "mystatefilebucket244"
     key            = "terraform.tfstate"
     region         = "ap-south-1"
    
@@ -17,7 +17,7 @@ resource "aws_instance" "LinuxServerEC2" {
      
         ami =var.ami
         instance_type = var.instancetype
-        key_name = "SivaPemFile" 
+        key_name = "SivaPem" 
         
         subnet_id = var.Subnet
         vpc_security_group_ids = [var.SecurityGroup]

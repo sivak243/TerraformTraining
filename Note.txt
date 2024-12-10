@@ -1,3 +1,5 @@
 This Repository is having Terraform scripts
 
 Modified the Terraform Script  from Modules .
+
+Note: While executing the scripts , Pls change the PEM Key name , VPC ID , SG ID.
